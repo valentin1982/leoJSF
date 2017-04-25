@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+
+    <ui:composition>
+
+
+        <header id="main-header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a class="logo" href="index.html">
+                                <h:graphicImage name="img/leo.png"/>
+                            </a>
+                        </div>
+                        <div class="col-md-5">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="top-user-area clearfix">
+                                <ul class="top-user-area-list list list-horizontal list-border">
+                                    <li class="top-user-area-avatar">
+                                        <a href="user-profile.html">
+                                            <h:graphicImage name="img/smile.png"/>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <h:form>
+                                            <h:commandLink action="#{loginController.logout()}" value="#{msg.exit}"/>
+                                        </h:form>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+
+    </ui:composition>
+
+
+</html>
